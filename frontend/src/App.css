@@ -182,3 +182,43 @@
     border-right-color: var(--border);
   }
 }
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-top: 28px;
+}
+
+.project-card {
+  padding: 24px;
+  background: #181a20;
+  border: 1px solid #303039;
+  border-radius: 10px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.project-card:hover {
+  border-color: #71717a;
+  transform: translateY(-4px);
+}
+
+.project-number {
+  margin-bottom: 24px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.project-card h3 {
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+}
+
+.project-card span {
+  color: #a1a1aa;
+  font-size: 0.85rem;
+}

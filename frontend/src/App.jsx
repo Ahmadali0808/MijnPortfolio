@@ -1,6 +1,7 @@
 import ProjectCard from "./components/ProjectCard";
 import Navbar from "./components/Navbar";
 import projects from "./data/projects";
+import "./App.css";
 
 function App() {
   return (
@@ -32,11 +33,13 @@ function App() {
           <div className="projects-grid">
             {projects.map((project) => (
               <ProjectCard
-                key={project.number}
+                key={project.slug}
                 number={project.number}
                 title={project.title}
                 description={project.description}
                 technologies={project.technologies}
+                githubUrl={project.githubUrl}
+                liveUrl={project.liveUrl}
               />
             ))}
           </div>

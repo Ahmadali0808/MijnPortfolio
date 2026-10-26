@@ -38,6 +38,20 @@ function ProjectPage() {
         ))}
       </ul>
 
+      <h2>What it can do</h2>
+      <ul className="info-list">
+        {project.features.map((feature) => (
+          <li key={feature}>{feature}</li>
+        ))}
+      </ul>
+
+      <h2>What I learned</h2>
+      <ul className="info-list">
+        {project.learned.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
+      </ul>
+
       <div className="project-links">
         {project.githubUrl && (
           <a href={project.githubUrl} target="_blank" rel="noreferrer">

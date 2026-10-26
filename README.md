@@ -43,4 +43,4 @@ frontend/src/data        the list of projects
 
 ## Status
 
-Still building it. Next I want to add my real projects.
+Still building it. Next I want to add screenshots of my projects.

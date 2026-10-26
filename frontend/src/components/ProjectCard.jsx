@@ -1,4 +1,6 @@
-function ProjectCard({ number, title, description, technologies, githubUrl, liveUrl }) {
+import { Link } from "react-router";
+
+function ProjectCard({ slug, number, title, description, technologies, githubUrl, liveUrl }) {
   return (
     <article className="project-card">
       <p className="project-number">PROJECT {number}</p>
@@ -10,6 +12,8 @@ function ProjectCard({ number, title, description, technologies, githubUrl, live
       <span className="project-tech">{technologies.join(" · ")}</span>
 
       <div className="project-links">
+        <Link to={`/projects/${slug}`}>View project</Link>
+
         {/* only show a link when the project has one */}
         {githubUrl && (
           <a href={githubUrl} target="_blank" rel="noreferrer">

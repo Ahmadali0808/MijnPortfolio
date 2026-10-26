@@ -48,7 +48,7 @@ const projects = [
     ],
     image: null,
     githubUrl: "https://github.com/Ahmadali0808/dodge-game",
-    liveUrl: null,
+    liveUrl: "https://ahmadali0808.github.io/dodge-game/",
   },
   {
     slug: "my-portfolio",

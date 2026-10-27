@@ -8,9 +8,19 @@ function ProjectPage() {
   const project = projects.find((p) => p.slug === slug);
 
   // start at the top of the page when it opens
+  // and show the project name in the browser tab
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [slug]);
+
+    if (project) {
+      document.title = project.title + " | Ahmad";
+    }
+
+    // put the normal title back when you leave the page
+    return () => {
+      document.title = "Ahmad | Portfolio";
+    };
+  }, [project]);
 
   if (!project) {
     return (

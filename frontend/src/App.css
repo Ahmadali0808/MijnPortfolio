@@ -252,8 +252,16 @@ footer {
 
 /* small screens */
 @media (max-width: 600px) {
+  .hero {
+    min-height: 70vh;
+  }
+
   .hero h1 {
     font-size: 2.4rem;
+  }
+
+  .project-page h1 {
+    font-size: 2rem;
   }
 
   .nav-links {
@@ -262,5 +270,13 @@ footer {
 
   .section {
     padding: 56px 0;
+  }
+}
+
+/* very small phones */
+@media (max-width: 360px) {
+  nav {
+    flex-direction: column;
+    gap: 8px;
   }
 }

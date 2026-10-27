@@ -31,6 +31,10 @@ function ProjectPage() {
       <h1>{project.title}</h1>
       <p>{project.description}</p>
 
+      {project.image && (
+        <img src={project.image} alt={project.title} className="project-page-image" />
+      )}
+
       <h2>Built with</h2>
       <ul className="tech-list">
         {project.technologies.map((tech) => (

@@ -1,6 +1,6 @@
 // List of projects shown on the portfolio.
 // slug: short name used in the URL of the project page (e.g. /projects/my-portfolio)
-// image: screenshot of the project (null = no screenshot yet)
+// image: screenshot of the project, saved in public/images (null = no screenshot yet)
 // githubUrl / liveUrl: links to the source code and live demo (null = not available)
 const projects = [
   {
@@ -46,7 +46,7 @@ const projects = [
       "Working with classes and objects in JavaScript",
       "Checking when two things hit each other",
     ],
-    image: null,
+    image: "/images/dodge-game.png",
     githubUrl: "https://github.com/Ahmadali0808/dodge-game",
     liveUrl: "https://ahmadali0808.github.io/dodge-game/",
   },
@@ -67,7 +67,7 @@ const projects = [
       "Using props and .map() to show a list",
       "Making pages with React Router",
     ],
-    image: null,
+    image: "/images/my-portfolio.png",
     githubUrl: "https://github.com/Ahmadali0808/MijnPortfolio",
     liveUrl: null,
   },

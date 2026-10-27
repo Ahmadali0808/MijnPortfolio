@@ -1,8 +1,10 @@
 import { Link } from "react-router";
 
-function ProjectCard({ slug, number, title, description, technologies, githubUrl, liveUrl }) {
+function ProjectCard({ slug, image, number, title, description, technologies, githubUrl, liveUrl }) {
   return (
     <article className="project-card">
+      {image && <img src={image} alt={title} className="project-image" />}
+
       <p className="project-number">PROJECT {number}</p>
 
       <h3>{title}</h3>

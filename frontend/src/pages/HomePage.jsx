@@ -40,6 +40,7 @@ function HomePage() {
             <ProjectCard
               key={project.slug}
               slug={project.slug}
+              image={project.image}
               number={project.number}
               title={project.title}
               description={project.description}

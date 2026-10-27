@@ -129,6 +129,16 @@ main {
   transform: translateY(-4px);
 }
 
+.project-image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+
 .project-number {
   margin-bottom: 24px;
   font-size: 0.8rem;
@@ -209,6 +219,15 @@ main {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 20px;
+}
+
+.project-page-image {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 32px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
 }
 
 .info-list {
